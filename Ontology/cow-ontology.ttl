@@ -85,13 +85,6 @@ cow:Group rdf:type owl:DatatypeProperty ;
           rdfs:label "group" .
 
 
-###  https://auroral.iot.linkeddata.es/def/cow#ReproductionWindow
-cow:ReproductionWindow rdf:type owl:DatatypeProperty ;
-                       rdfs:domain cow:ReproductiveStatus ;
-                       rdfs:range xsd:string ;
-                       rdfs:label "reproduction window" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/cow#birthDate
 cow:birthDate rdf:type owl:DatatypeProperty ;
               rdfs:domain cow:Animal ;
@@ -101,37 +94,10 @@ cow:birthDate rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination
 cow:daysSinceLastInsemination rdf:type owl:DatatypeProperty ;
-                              rdfs:domain cow:Pregnant ;
+                              rdfs:domain cow:Inseminated ,
+                                          cow:Pregnant ;
                               rdfs:range xsd:integer ;
                               rdfs:label "days since last insemination" .
-
-
-###  https://auroral.iot.linkeddata.es/def/cow#highActivity
-cow:highActivity rdf:type owl:DatatypeProperty ;
-                 rdfs:domain cow:Activity ;
-                 rdfs:range xsd:string ;
-                 rdfs:label "high activity" .
-
-
-###  https://auroral.iot.linkeddata.es/def/cow#highActivityHour
-cow:highActivityHour rdf:type owl:DatatypeProperty ;
-                     rdfs:domain cow:Activity ;
-                     rdfs:range xsd:dateTime ;
-                     rdfs:label "high activity hour" .
-
-
-###  https://auroral.iot.linkeddata.es/def/cow#highActivityLevel
-cow:highActivityLevel rdf:type owl:DatatypeProperty ;
-                      rdfs:domain cow:Activity ;
-                      rdfs:range xsd:string ;
-                      rdfs:label "high activity level" .
-
-
-###  https://auroral.iot.linkeddata.es/def/cow#highActivityToday
-cow:highActivityToday rdf:type owl:DatatypeProperty ;
-                      rdfs:domain cow:Activity ;
-                      rdfs:range xsd:string ;
-                      rdfs:label "high activity today" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cow#idAnimal
@@ -160,13 +126,6 @@ cow:relativeActivity rdf:type owl:DatatypeProperty ;
                      rdfs:domain cow:Activity ;
                      rdfs:range xsd:string ;
                      rdfs:label "relative activity" .
-
-
-###  https://auroral.iot.linkeddata.es/def/cow#timeFromHighActivity
-cow:timeFromHighActivity rdf:type owl:DatatypeProperty ;
-                         rdfs:domain cow:Activity ;
-                         rdfs:range xsd:dateTime ;
-                         rdfs:label "time from high activity" .
 
 
 #################################################################
@@ -238,6 +197,12 @@ cow:Lactation rdf:type owl:Class ;
 cow:Pregnant rdf:type owl:Class ;
              rdfs:subClassOf cow:ReproductiveStatus ;
              rdfs:label "Pregnant" .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#RecentDelivery
+cow:RecentDelivery rdf:type owl:Class ;
+                   rdfs:subClassOf cow:ReproductiveStatus ;
+                   rdfs:label "Recent Delivery" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus

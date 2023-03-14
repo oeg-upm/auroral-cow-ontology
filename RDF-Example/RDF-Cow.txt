@@ -1,0 +1,40 @@
+@prefix ns1: <https://auroral.iot.linkeddata.es/def/cow#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Accelerometer rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+
+ns1:Cow491 a ns1:Cow ;
+    ns1:birthDate "1601-01-01"^^xsd:date ;
+    ns1:group 2 ;
+    ns1:hasActivity ns1:Activity491 ;
+    ns1:hasBreeding ns1:RedSpottedCow ;
+    ns1:hasSensor ns1:Accelerometer41198 ;
+    ns1:idAnimal "491"^^xsd:string ;
+    ns1:reproductiveStatus ns1:Pregnant491 .
+
+ns1:Group491 a ns1:Group ;
+    ns1:groupNo "1"^^xsd:string .
+
+ns1:Lactation491 a ns1:Lactation ;
+    ns1:lactationDays 307 .
+
+ns1:Accelerometer41198 a <https://auroral.iot.linkeddata.es/def/adapters#Accelerometer> .
+
+ns1:Activity491 a ns1:Activity ;
+    ns1:cowAndHeiferActivity "no action"^^xsd:string ;
+    ns1:highActivity "notsleceted"^^xsd:string ;
+    ns1:highActivityToday "notsleceted"^^xsd:string ;
+    ns1:relativeActivity "96"^^xsd:string .
+
+ns1:Animal rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> .
+
+ns1:Cow rdfs:subClassOf ns1:Animal .
+
+ns1:Pregnant rdfs:subClassOf ns1:ReproductiveStatus .
+
+ns1:Pregnant491 a ns1:Pregnant ;
+    ns1:daysSinceLastInsemination 178 ;
+    ns1:reproductionWindow "notselected"^^xsd:string .
+
+ns1:RedSpottedCow a ns1:Breeding .
