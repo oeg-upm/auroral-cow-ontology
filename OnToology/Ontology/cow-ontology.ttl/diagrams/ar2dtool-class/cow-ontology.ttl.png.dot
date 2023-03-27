@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "cow:ReproductiveStatus" "cow:Lactation" "saref:Property" "saref:FeatureOfInterest" "cow:Cow" "cow:Animal" "cow:Breeding" "cow:Activity" "cow:Inseminated" ; /*classes style*/
+	"cow:" -> "https://auroral.iot.linkeddata.es/def/cow#/1.0.0" [ label = "owl:versionIRI" ];
+	"cow:Animal" -> "xsd:string" [ label = "cow:idAnimal" ];
+	"cow:Animal" -> "xsd:string" [ label = "cow:Group" ];
+	"cow:Animal" -> "cow:Breeding" [ label = "cow:hasBreeding" ];
+	"cow:Animal" -> "xsd:dateTime" [ label = "cow:birthDate" ];
+	"cow:Activity" -> "xsd:string" [ label = "cow:relativeActivity" ];
+	"saref:Property" -> "saref:FeatureOfInterest" [ label = "http://www.owl-ontologies.com/saref#isPropertyOf" ];
+	"cow:Activity" -> "xsd:string" [ label = "cow:probabilityOfHighActivity" ];
+	"cow:Animal" -> "cow:Activity" [ label = "cow:hasActivity" ];
+	"cow:Lactation" -> "xsd:integer" [ label = "cow:lactationDays" ];
+	"cow:Cow" -> "cow:Lactation" [ label = "cow:hasLactation" ];
+	"cow:Animal" -> "cow:ReproductiveStatus" [ label = "cow:reproductiveStatus" ];
+	"cow:Inseminated" -> "xsd:integer" [ label = "cow:daysSinceLastInsemination" ];
+
+}
