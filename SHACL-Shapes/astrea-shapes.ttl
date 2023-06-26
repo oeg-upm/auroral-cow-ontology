@@ -1,20 +1,260 @@
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix :      <https://auroral.iot.linkeddata.es/def/cow#> .
 @prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix afn:   <http://jena.apache.org/ARQ/function#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://astrea.linkeddata.es/shapes#914c1b20ae42cc5fecc19590ce0616a3>
+        a            sh:PropertyShape ;
+        rdfs:label   "has activity" ;
+        sh:class     :Activity ;
+        sh:name      "has activity" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasActivity .
+
+<https://astrea.linkeddata.es/shapes#9166039b51e4199c33cad0ec504280ea>
+        a               sh:NodeShape ;
+        rdfs:label      "Pregnant" ;
+        sh:name         "Pregnant" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5> ;
+        sh:targetClass  :Pregnant .
+
+<https://astrea.linkeddata.es/shapes#17e2d1af3b3ee8b7ef06f067a80bd778>
+        a            sh:PropertyShape ;
+        rdfs:label   "measures property" ;
+        sh:name      "measures property" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://www.owl-ontologies.com/saref#measuresProperty> .
+
+<https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5>
+        a            sh:PropertyShape ;
+        rdfs:label   "days since last insemination" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "days since last insemination" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :daysSinceLastInsemination ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1>
+        a               sh:NodeShape ;
+        rdfs:label      "Accelerometer" ;
+        sh:name         "Accelerometer" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/adapters#Accelerometer> .
+
+<https://astrea.linkeddata.es/shapes#eabf8a91bfdf0ce7b8f2147fa58c7e39>
+        a            sh:PropertyShape ;
+        rdfs:label   "lactation days" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "lactation days" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :lactationDays ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#f9bc011f7ceb345f6e801c5efffea394>
+        a               sh:NodeShape ;
+        rdfs:label      "Recent Delivery" ;
+        sh:name         "Recent Delivery" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :RecentDelivery .
+
+<https://astrea.linkeddata.es/shapes#656cf50aa6e9fcc699518b951573a015>
+        a               sh:NodeShape ;
+        rdfs:label      "Cow" ;
+        sh:name         "Cow" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#5a3984bb932380a6cba62af230888155> ;
+        sh:targetClass  :Cow .
+
+<https://astrea.linkeddata.es/shapes#e1615c2f83daf902ae7464fbfbeab60e>
+        a               sh:NodeShape ;
+        rdfs:label      "Heifer" ;
+        sh:name         "Heifer" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Heifer .
+
 <http://astrea.linkeddata.es/report>
         a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#23bf2ba0dcea99222674b7f0978b9364> , <https://astrea.linkeddata.es/shapes#9166039b51e4199c33cad0ec504280ea> , <https://astrea.linkeddata.es/shapes#38ff24ad6d9612519cb61e8bb8ed7c84> , <https://astrea.linkeddata.es/shapes#b8c7efe609a6fe34a3c389037e5364f6> , <https://astrea.linkeddata.es/shapes#790f2d51fc38e26d46e7fe6681ec0ecc> , <https://astrea.linkeddata.es/shapes#7d698ecd35ab4e35c6f62c84baf2f938> , <https://astrea.linkeddata.es/shapes#041b34c72737bce494e4a307d6572aee> , <https://astrea.linkeddata.es/shapes#3575b83c6e9df4542a92f8880d84ad37> , <https://astrea.linkeddata.es/shapes#656cf50aa6e9fcc699518b951573a015> , <https://astrea.linkeddata.es/shapes#17e2d1af3b3ee8b7ef06f067a80bd778> , <https://astrea.linkeddata.es/shapes#e1615c2f83daf902ae7464fbfbeab60e> , <https://astrea.linkeddata.es/shapes#f9bc011f7ceb345f6e801c5efffea394> , <https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5> , <https://astrea.linkeddata.es/shapes#eabf8a91bfdf0ce7b8f2147fa58c7e39> , <https://astrea.linkeddata.es/shapes#b65276c767638caec39407af70ca24ab> , <https://astrea.linkeddata.es/shapes#2def118d025fba73749e6a42d6c3e92e> , <https://astrea.linkeddata.es/shapes#a8f2dbf433b009eec8c842fdd8b3df55> , <https://astrea.linkeddata.es/shapes#609a26c94938050380cc26181d5166b3> , <https://astrea.linkeddata.es/shapes#3cb2c5740174d37bb46b3ea4d16a3b59> , <https://astrea.linkeddata.es/shapes#914c1b20ae42cc5fecc19590ce0616a3> , <https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598> , <https://astrea.linkeddata.es/shapes#93784a69fd785f1b54d42c607dec320c> , <https://astrea.linkeddata.es/shapes#a11df034793f9bff7d20f69651b7ac53> , <https://astrea.linkeddata.es/shapes#d8e4712626fa170e9bb2ad1bc6fb6b22> , <https://astrea.linkeddata.es/shapes#8bd89fe05f84e51782a812322aef1031> , <https://astrea.linkeddata.es/shapes#94055da5a1b9ee17ec625821f49ff794> , <https://astrea.linkeddata.es/shapes#2de47a670fcaf529bd0b08f237761ce3> , <https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca> , <https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1> , <https://astrea.linkeddata.es/shapes#5a3984bb932380a6cba62af230888155> ;
         <https://w3id.org/def/astrea#generatedShapesFrom>
-                <https://astrea.linkeddata.es/report/339616021> .
+                <https://astrea.linkeddata.es/report/1366361154> .
 
-<https://astrea.linkeddata.es/report/339616021>
+<https://astrea.linkeddata.es/shapes#a8f2dbf433b009eec8c842fdd8b3df55>
+        a               sh:NodeShape ;
+        rdfs:label      "Animal" ;
+        sh:name         "Animal" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#041b34c72737bce494e4a307d6572aee> , <https://astrea.linkeddata.es/shapes#8bd89fe05f84e51782a812322aef1031> , <https://astrea.linkeddata.es/shapes#b8c7efe609a6fe34a3c389037e5364f6> , <https://astrea.linkeddata.es/shapes#3cb2c5740174d37bb46b3ea4d16a3b59> , <https://astrea.linkeddata.es/shapes#914c1b20ae42cc5fecc19590ce0616a3> , <https://astrea.linkeddata.es/shapes#7d698ecd35ab4e35c6f62c84baf2f938> ;
+        sh:targetClass  :Animal .
+
+<https://astrea.linkeddata.es/shapes#2def118d025fba73749e6a42d6c3e92e>
+        a            sh:PropertyShape ;
+        rdfs:label   "is property of" ;
+        sh:class     <https://saref.etsi.org/core#FeatureOfInterest> ;
+        sh:name      "is property of" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      <http://www.owl-ontologies.com/saref#isPropertyOf> .
+
+<https://astrea.linkeddata.es/shapes#94055da5a1b9ee17ec625821f49ff794>
+        a               sh:NodeShape ;
+        rdfs:label      "Feature Of Interest" ;
+        sh:name         "Feature Of Interest" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://saref.etsi.org/core#FeatureOfInterest> .
+
+<https://astrea.linkeddata.es/shapes#b8c7efe609a6fe34a3c389037e5364f6>
+        a            sh:PropertyShape ;
+        rdfs:label   "has breeding" ;
+        sh:class     :Breeding ;
+        sh:name      "has breeding" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasBreeding .
+
+<https://astrea.linkeddata.es/shapes#609a26c94938050380cc26181d5166b3>
+        a            sh:PropertyShape ;
+        rdfs:label   "relative activity" ;
+        sh:datatype  xsd:string ;
+        sh:name      "relative activity" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :relativeActivity ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/report/1366361154>
         a       <https://w3id.org/def/astrea#ReportEntry> ;
         <https://w3id.org/def/astrea#message>
-                "Provided content belongs to no ontology (maybe check that it contains the mandatory statement rdf:type owl:Ontology)" ;
+                "Shapes generated with no errors" ;
         <https://w3id.org/def/astrea#source>
-                "https://github.com/oeg-upm/auroral-cow-Ontology" ;
+                "https://auroral.iot.linkeddata.es/def/cow/ontology.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "400"^^xsd:int .
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#3575b83c6e9df4542a92f8880d84ad37>
+        a               sh:NodeShape ;
+        rdfs:label      "Does Not Need Artificial Insemination" ;
+        sh:name         "Does Not Need Artificial Insemination" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :DoesNotNeedArtificialInsemination .
+
+<https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598>
+        a               sh:NodeShape ;
+        rdfs:label      "Property" ;
+        sh:name         "Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2def118d025fba73749e6a42d6c3e92e> ;
+        sh:targetClass  <https://saref.etsi.org/core#Property> .
+
+<https://astrea.linkeddata.es/shapes#d8e4712626fa170e9bb2ad1bc6fb6b22>
+        a               sh:NodeShape ;
+        rdfs:label      "Breeding" ;
+        sh:name         "Breeding" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :Breeding .
+
+<https://astrea.linkeddata.es/shapes#23bf2ba0dcea99222674b7f0978b9364>
+        a               sh:NodeShape ;
+        rdfs:label      "Reproductive Status" ;
+        sh:name         "Reproductive Status" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :ReproductiveStatus .
+
+<https://astrea.linkeddata.es/shapes#b65276c767638caec39407af70ca24ab>
+        a               sh:NodeShape ;
+        rdfs:label      "To Undergo Artificial Insemination" ;
+        sh:name         "To Undergo Artificial Insemination" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  :ToUndergoArtificialInsemination .
+
+<https://astrea.linkeddata.es/shapes#8bd89fe05f84e51782a812322aef1031>
+        a            sh:PropertyShape ;
+        rdfs:label   "id animal" ;
+        sh:datatype  xsd:string ;
+        sh:name      "id animal" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :idAnimal ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#a11df034793f9bff7d20f69651b7ac53>
+        a               sh:NodeShape ;
+        rdfs:label      "Lactation" ;
+        sh:name         "Lactation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#eabf8a91bfdf0ce7b8f2147fa58c7e39> ;
+        sh:targetClass  :Lactation .
+
+<https://astrea.linkeddata.es/shapes#38ff24ad6d9612519cb61e8bb8ed7c84>
+        a            sh:PropertyShape ;
+        rdfs:label   "probability of high activity" ;
+        sh:datatype  xsd:string ;
+        sh:name      "probability of high activity" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :probabilityOfHighActivity ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca>
+        a               sh:NodeShape ;
+        rdfs:label      "Sensor" ;
+        sh:name         "Sensor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+
+<https://astrea.linkeddata.es/shapes#3cb2c5740174d37bb46b3ea4d16a3b59>
+        a            sh:PropertyShape ;
+        rdfs:label   "reproductive status" ;
+        sh:class     :ReproductiveStatus ;
+        sh:name      "reproductive status" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :reproductiveStatus .
+
+<https://astrea.linkeddata.es/shapes#790f2d51fc38e26d46e7fe6681ec0ecc>
+        a               sh:NodeShape ;
+        rdfs:label      "Inseminated" ;
+        sh:name         "Inseminated" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5> ;
+        sh:targetClass  :Inseminated .
+
+<https://astrea.linkeddata.es/shapes#93784a69fd785f1b54d42c607dec320c>
+        a               sh:NodeShape ;
+        rdfs:label      "Space Property" ;
+        sh:name         "Space Property" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://www.owl-ontologies.com/adapters#SpaceProperty> .
+
+<https://astrea.linkeddata.es/shapes#041b34c72737bce494e4a307d6572aee>
+        a            sh:PropertyShape ;
+        rdfs:label   "group" ;
+        sh:datatype  xsd:string ;
+        sh:name      "group" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :Group ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#2de47a670fcaf529bd0b08f237761ce3>
+        a               sh:NodeShape ;
+        rdfs:label      "Activity" ;
+        sh:name         "Activity" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#609a26c94938050380cc26181d5166b3> , <https://astrea.linkeddata.es/shapes#38ff24ad6d9612519cb61e8bb8ed7c84> ;
+        sh:targetClass  :Activity .
+
+<https://astrea.linkeddata.es/shapes#5a3984bb932380a6cba62af230888155>
+        a            sh:PropertyShape ;
+        rdfs:label   "has lactation" ;
+        sh:class     :Lactation ;
+        sh:name      "has lactation" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      :hasLactation .
+
+<https://astrea.linkeddata.es/shapes#7d698ecd35ab4e35c6f62c84baf2f938>
+        a            sh:PropertyShape ;
+        rdfs:label   "birth date" ;
+        sh:datatype  xsd:dateTime ;
+        sh:name      "birth date" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      :birthDate ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
