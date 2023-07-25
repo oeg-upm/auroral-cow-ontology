@@ -1,4 +1,4 @@
-# auroral-cow-ontology
+# auroral-Farming-ontology
 
 This repository contains the code and related resources for the Farming domain AURORAL ontology
 
