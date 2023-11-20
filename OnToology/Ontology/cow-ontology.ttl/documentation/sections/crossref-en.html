@@ -1,6 +1,8 @@
 <h2 id="crossreference" class="list">Cross-reference for [Ontology Name] classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by [Ontology Name].
-<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+<div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
@@ -125,7 +127,7 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#birthDate"
                title="https://auroral.iot.linkeddata.es/def/cow#birthDate">birth date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#Group" title="https://auroral.iot.linkeddata.es/def/cow#Group">group</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#group" title="https://auroral.iot.linkeddata.es/def/cow#group">group</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasActivity"
                title="https://auroral.iot.linkeddata.es/def/cow#hasActivity">has activity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasBreeding"
@@ -241,12 +243,6 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus">Reproductive Status</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#daysSinceLastInsemination"
-               title="https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination">days since last insemination</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="Lactation">
@@ -285,12 +281,6 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus">Reproductive Status</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#daysSinceLastInsemination"
-               title="https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination">days since last insemination</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="https://saref.etsi.org/core#Property">
@@ -310,6 +300,12 @@ This section provides details for each class and property defined by [Ontology N
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://www.owl-ontologies.com/saref#isPropertyOf" title="http://www.owl-ontologies.com/saref#isPropertyOf">is property of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.owl-ontologies.com/saref#measuresProperty"
+               title="http://www.owl-ontologies.com/saref#measuresProperty">measures property</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -374,6 +370,12 @@ This section provides details for each class and property defined by [Ontology N
                title="https://auroral.iot.linkeddata.es/def/adapters#Accelerometer">Accelerometer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.owl-ontologies.com/saref#measuresProperty"
+               title="http://www.owl-ontologies.com/saref#measuresProperty">measures property</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://www.owl-ontologies.com/adapters#SpaceProperty">
@@ -417,7 +419,9 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -542,6 +546,21 @@ This section provides details for each class and property defined by [Ontology N
       </h3>
       <p>
          <strong>IRI:</strong> http://www.owl-ontologies.com/saref#measuresProperty</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://auroral.iot.linkeddata.es/def/core#Sensor"
+                  title="https://auroral.iot.linkeddata.es/def/core#Sensor">Sensor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="reproductiveStatus">
       <h3>reproductive status<sup class="type-op" title="object property">op</sup>
@@ -566,7 +585,9 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
@@ -578,7 +599,7 @@ This section provides details for each class and property defined by [Ontology N
             title="https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination">days since last insemination</a>
       </li>
       <li>
-         <a href="#Group" title="https://auroral.iot.linkeddata.es/def/cow#Group">group</a>
+         <a href="#group" title="https://auroral.iot.linkeddata.es/def/cow#group">group</a>
       </li>
       <li>
          <a href="#idAnimal"
@@ -629,17 +650,6 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Inseminated"
-                  title="https://auroral.iot.linkeddata.es/def/cow#Inseminated">Inseminated</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Pregnant"
-                  title="https://auroral.iot.linkeddata.es/def/cow#Pregnant">Pregnant</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#integer"
@@ -649,13 +659,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="Group">
+   <div class="entity" id="group">
       <h3>group<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cow#Group</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/cow#group</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -767,7 +777,9 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>

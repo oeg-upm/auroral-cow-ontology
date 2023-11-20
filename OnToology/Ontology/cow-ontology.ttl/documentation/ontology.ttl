@@ -8,8 +8,13 @@
 
 <https://auroral.iot.linkeddata.es/def/cow#> rdf:type owl:Ontology ;
                                               owl:versionIRI <https://auroral.iot.linkeddata.es/def/cow#/1.0.0> ;
-                                              <http://purl.org/dc/elements/1.1/creator> "Ahlem Rhayem" ;
-                                              <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+                                              <http://purl.org/dc/elements/1.1/creator> "Ahlem Rhayem" ,
+                                                                                        "Andrea Cimmino" ,
+                                                                                        "Juan Cano" ,
+                                                                                        "María Poveda-Villalón" ,
+                                                                                        "Raúl Garcia-Castro" ;
+                                              <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the Farming (Dairy production) data for the AURORAL project." ;
+                                              <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
 
 #################################################################
 #    Annotation properties
@@ -21,6 +26,10 @@
 
 ###  http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -36,6 +45,8 @@
 
 ###  http://www.owl-ontologies.com/saref#measuresProperty
 <http://www.owl-ontologies.com/saref#measuresProperty> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://auroral.iot.linkeddata.es/def/core#Sensor> ;
+                                                       rdfs:range <https://saref.etsi.org/core#Property> ;
                                                        rdfs:label "measures property" .
 
 
@@ -71,13 +82,6 @@
 #    Data properties
 #################################################################
 
-###  https://auroral.iot.linkeddata.es/def/cow#Group
-:Group rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Animal ;
-       rdfs:range xsd:string ;
-       rdfs:label "group" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/cow#birthDate
 :birthDate rdf:type owl:DatatypeProperty ;
            rdfs:domain :Animal ;
@@ -87,10 +91,15 @@
 
 ###  https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination
 :daysSinceLastInsemination rdf:type owl:DatatypeProperty ;
-                           rdfs:domain :Inseminated ,
-                                       :Pregnant ;
                            rdfs:range xsd:integer ;
                            rdfs:label "days since last insemination" .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#group
+:group rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Animal ;
+       rdfs:range xsd:string ;
+       rdfs:label "group" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/cow#idAnimal

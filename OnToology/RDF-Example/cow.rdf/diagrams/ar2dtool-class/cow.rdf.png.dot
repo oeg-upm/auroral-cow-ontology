@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns1:Cow491" -> "ns1:Pregnant491" [ label = "ns1:reproductiveStatus" ];
+	"ns1:Cow491" -> "ns1:Accelerometer41198" [ label = "ns1:hasSensor" ];
+	"ns1:Cow491" -> "ns1:Lactation491" [ label = "ns1:hasLactation" ];
+	"ns1:Cow491" -> "ns1:RedSpottedCow" [ label = "ns1:hasBreeding" ];
+	"ns1:Cow491" -> "ns1:Activity491" [ label = "ns1:hasActivity" ];
+
+}

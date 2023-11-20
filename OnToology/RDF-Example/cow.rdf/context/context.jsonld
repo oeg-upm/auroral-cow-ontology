@@ -1,0 +1,67 @@
+{
+  "@context" : {
+    "relativeActivity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#relativeActivity"
+    },
+    "hasBreeding" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasBreeding"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://saref.etsi.org/core#FeatureOfInterest"
+    },
+    "idAnimal" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#idAnimal"
+    },
+    "hasActivity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasActivity"
+    },
+    "Pregnant" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#Pregnant"
+    },
+    "Activity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#Activity"
+    },
+    "Animal" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#Animal"
+    },
+    "ReproductiveStatus" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus"
+    },
+    "lactationDays" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#lactationDays"
+    },
+    "daysSinceLastInsemination" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination"
+    },
+    "Breeding" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#Breeding"
+    },
+    "hasSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasSensor"
+    },
+    "hasLactation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasLactation"
+    },
+    "birthDate" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#birthDate"
+    },
+    "reproductiveStatus" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#reproductiveStatus"
+    },
+    "Cow" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#Cow"
+    },
+    "Lactation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#Lactation"
+    },
+    "probabilityOfHighActivity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#probabilityOfHighActivity"
+    },
+    "Accelerometer" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Accelerometer"
+    },
+    "Sensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+    }
+  }
+}

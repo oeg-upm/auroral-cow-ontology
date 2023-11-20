@@ -8,6 +8,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasBreeding",
       "@type" : "@id"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "RecentDelivery" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/cow#RecentDelivery"
     },
@@ -20,6 +23,10 @@
     },
     "ToUndergoArtificialInsemination" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/cow#ToUndergoArtificialInsemination"
+    },
+    "group" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/cow#group",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "idAnimal" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/cow#idAnimal",
@@ -95,10 +102,6 @@
     },
     "DoesNotNeedArtificialInsemination" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/cow#DoesNotNeedArtificialInsemination"
-    },
-    "Group" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/cow#Group",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Accelerometer" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Accelerometer"

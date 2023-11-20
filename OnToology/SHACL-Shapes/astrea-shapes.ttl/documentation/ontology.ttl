@@ -1,0 +1,437 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#name
+<http://www.w3.org/ns/shacl#name> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#pattern
+<http://www.w3.org/ns/shacl#pattern> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#contains
+<https://w3id.org/def/astrea#contains> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#generatedShapesFrom
+<https://w3id.org/def/astrea#generatedShapesFrom> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#message
+<https://w3id.org/def/astrea#message> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#source
+<https://w3id.org/def/astrea#source> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#statusCode
+<https://w3id.org/def/astrea#statusCode> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/shacl#PropertyShape
+<http://www.w3.org/ns/shacl#PropertyShape> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/astrea#ReportEntry
+<https://w3id.org/def/astrea#ReportEntry> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/astrea#ShapeReport
+<https://w3id.org/def/astrea#ShapeReport> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://astrea.linkeddata.es/report
+<http://astrea.linkeddata.es/report> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/def/astrea#ShapeReport> ;
+                                     <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#a11df034793f9bff7d20f69651b7ac53> ,
+                                                                            <https://astrea.linkeddata.es/shapes#a8f2dbf433b009eec8c842fdd8b3df55> ,
+                                                                            <https://astrea.linkeddata.es/shapes#b65276c767638caec39407af70ca24ab> ,
+                                                                            <https://astrea.linkeddata.es/shapes#b8c7efe609a6fe34a3c389037e5364f6> ,
+                                                                            <https://astrea.linkeddata.es/shapes#d8e4712626fa170e9bb2ad1bc6fb6b22> ,
+                                                                            <https://astrea.linkeddata.es/shapes#e1615c2f83daf902ae7464fbfbeab60e> ,
+                                                                            <https://astrea.linkeddata.es/shapes#eabf8a91bfdf0ce7b8f2147fa58c7e39> ,
+                                                                            <https://astrea.linkeddata.es/shapes#f9bc011f7ceb345f6e801c5efffea394> ,
+                                                                            <https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1> ,
+                                                                            <https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598> ,
+                                                                            <https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca> ,
+                                                                            <https://astrea.linkeddata.es/shapes#041b34c72737bce494e4a307d6572aee> ,
+                                                                            <https://astrea.linkeddata.es/shapes#17e2d1af3b3ee8b7ef06f067a80bd778> ,
+                                                                            <https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5> ,
+                                                                            <https://astrea.linkeddata.es/shapes#2de47a670fcaf529bd0b08f237761ce3> ,
+                                                                            <https://astrea.linkeddata.es/shapes#2def118d025fba73749e6a42d6c3e92e> ,
+                                                                            <https://astrea.linkeddata.es/shapes#23bf2ba0dcea99222674b7f0978b9364> ,
+                                                                            <https://astrea.linkeddata.es/shapes#3cb2c5740174d37bb46b3ea4d16a3b59> ,
+                                                                            <https://astrea.linkeddata.es/shapes#3575b83c6e9df4542a92f8880d84ad37> ,
+                                                                            <https://astrea.linkeddata.es/shapes#38ff24ad6d9612519cb61e8bb8ed7c84> ,
+                                                                            <https://astrea.linkeddata.es/shapes#5a3984bb932380a6cba62af230888155> ,
+                                                                            <https://astrea.linkeddata.es/shapes#609a26c94938050380cc26181d5166b3> ,
+                                                                            <https://astrea.linkeddata.es/shapes#656cf50aa6e9fcc699518b951573a015> ,
+                                                                            <https://astrea.linkeddata.es/shapes#7d698ecd35ab4e35c6f62c84baf2f938> ,
+                                                                            <https://astrea.linkeddata.es/shapes#790f2d51fc38e26d46e7fe6681ec0ecc> ,
+                                                                            <https://astrea.linkeddata.es/shapes#8bd89fe05f84e51782a812322aef1031> ,
+                                                                            <https://astrea.linkeddata.es/shapes#914c1b20ae42cc5fecc19590ce0616a3> ,
+                                                                            <https://astrea.linkeddata.es/shapes#9166039b51e4199c33cad0ec504280ea> ,
+                                                                            <https://astrea.linkeddata.es/shapes#93784a69fd785f1b54d42c607dec320c> ,
+                                                                            <https://astrea.linkeddata.es/shapes#94055da5a1b9ee17ec625821f49ff794> ;
+                                     <https://w3id.org/def/astrea#generatedShapesFrom> <https://astrea.linkeddata.es/report/1366361154> .
+
+
+###  https://astrea.linkeddata.es/report/1366361154
+<https://astrea.linkeddata.es/report/1366361154> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/def/astrea#ReportEntry> ;
+                                                 <https://w3id.org/def/astrea#message> "Shapes generated with no errors" ;
+                                                 <https://w3id.org/def/astrea#source> "https://auroral.iot.linkeddata.es/def/cow/ontology.ttl" ;
+                                                 <https://w3id.org/def/astrea#statusCode> "200"^^xsd:int .
+
+
+###  https://astrea.linkeddata.es/shapes#a11df034793f9bff7d20f69651b7ac53
+<https://astrea.linkeddata.es/shapes#a11df034793f9bff7d20f69651b7ac53> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Lactation" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Lactation" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#eabf8a91bfdf0ce7b8f2147fa58c7e39> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#Lactation> .
+
+
+###  https://astrea.linkeddata.es/shapes#a8f2dbf433b009eec8c842fdd8b3df55
+<https://astrea.linkeddata.es/shapes#a8f2dbf433b009eec8c842fdd8b3df55> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Animal" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Animal" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#b8c7efe609a6fe34a3c389037e5364f6> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#041b34c72737bce494e4a307d6572aee> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#3cb2c5740174d37bb46b3ea4d16a3b59> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#7d698ecd35ab4e35c6f62c84baf2f938> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#8bd89fe05f84e51782a812322aef1031> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#914c1b20ae42cc5fecc19590ce0616a3> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#Animal> .
+
+
+###  https://astrea.linkeddata.es/shapes#b65276c767638caec39407af70ca24ab
+<https://astrea.linkeddata.es/shapes#b65276c767638caec39407af70ca24ab> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "To Undergo Artificial Insemination" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "To Undergo Artificial Insemination" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#ToUndergoArtificialInsemination> .
+
+
+###  https://astrea.linkeddata.es/shapes#b8c7efe609a6fe34a3c389037e5364f6
+<https://astrea.linkeddata.es/shapes#b8c7efe609a6fe34a3c389037e5364f6> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has breeding" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/cow#Breeding> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has breeding" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#hasBreeding> .
+
+
+###  https://astrea.linkeddata.es/shapes#d8e4712626fa170e9bb2ad1bc6fb6b22
+<https://astrea.linkeddata.es/shapes#d8e4712626fa170e9bb2ad1bc6fb6b22> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Breeding" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Breeding" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#Breeding> .
+
+
+###  https://astrea.linkeddata.es/shapes#e1615c2f83daf902ae7464fbfbeab60e
+<https://astrea.linkeddata.es/shapes#e1615c2f83daf902ae7464fbfbeab60e> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Heifer" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Heifer" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#Heifer> .
+
+
+###  https://astrea.linkeddata.es/shapes#eabf8a91bfdf0ce7b8f2147fa58c7e39
+<https://astrea.linkeddata.es/shapes#eabf8a91bfdf0ce7b8f2147fa58c7e39> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "lactation days" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:integer ;
+                                                                       <http://www.w3.org/ns/shacl#name> "lactation days" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#lactationDays> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+
+
+###  https://astrea.linkeddata.es/shapes#f9bc011f7ceb345f6e801c5efffea394
+<https://astrea.linkeddata.es/shapes#f9bc011f7ceb345f6e801c5efffea394> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Recent Delivery" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Recent Delivery" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#RecentDelivery> .
+
+
+###  https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1
+<https://astrea.linkeddata.es/shapes#f9f8ae3e99cf2f296b406f0c0f70c1f1> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Accelerometer" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Accelerometer" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/adapters#Accelerometer> .
+
+
+###  https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598
+<https://astrea.linkeddata.es/shapes#fc55fe8c5e46c96d7d698726a89d8598> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Property" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Property" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2def118d025fba73749e6a42d6c3e92e> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://saref.etsi.org/core#Property> .
+
+
+###  https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca
+<https://astrea.linkeddata.es/shapes#ff11968c5f259b2cc23451a7b0f009ca> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Sensor" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Sensor" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+
+
+###  https://astrea.linkeddata.es/shapes#041b34c72737bce494e4a307d6572aee
+<https://astrea.linkeddata.es/shapes#041b34c72737bce494e4a307d6572aee> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "group" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "group" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#Group> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#17e2d1af3b3ee8b7ef06f067a80bd778
+<https://astrea.linkeddata.es/shapes#17e2d1af3b3ee8b7ef06f067a80bd778> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "measures property" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "measures property" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://www.owl-ontologies.com/saref#measuresProperty> .
+
+
+###  https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5
+<https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "days since last insemination" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:integer ;
+                                                                       <http://www.w3.org/ns/shacl#name> "days since last insemination" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+
+
+###  https://astrea.linkeddata.es/shapes#2de47a670fcaf529bd0b08f237761ce3
+<https://astrea.linkeddata.es/shapes#2de47a670fcaf529bd0b08f237761ce3> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Activity" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Activity" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#38ff24ad6d9612519cb61e8bb8ed7c84> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#609a26c94938050380cc26181d5166b3> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#Activity> .
+
+
+###  https://astrea.linkeddata.es/shapes#2def118d025fba73749e6a42d6c3e92e
+<https://astrea.linkeddata.es/shapes#2def118d025fba73749e6a42d6c3e92e> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "is property of" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://saref.etsi.org/core#FeatureOfInterest> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "is property of" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://www.owl-ontologies.com/saref#isPropertyOf> .
+
+
+###  https://astrea.linkeddata.es/shapes#23bf2ba0dcea99222674b7f0978b9364
+<https://astrea.linkeddata.es/shapes#23bf2ba0dcea99222674b7f0978b9364> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Reproductive Status" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Reproductive Status" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus> .
+
+
+###  https://astrea.linkeddata.es/shapes#3cb2c5740174d37bb46b3ea4d16a3b59
+<https://astrea.linkeddata.es/shapes#3cb2c5740174d37bb46b3ea4d16a3b59> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "reproductive status" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "reproductive status" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#reproductiveStatus> .
+
+
+###  https://astrea.linkeddata.es/shapes#3575b83c6e9df4542a92f8880d84ad37
+<https://astrea.linkeddata.es/shapes#3575b83c6e9df4542a92f8880d84ad37> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Does Not Need Artificial Insemination" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Does Not Need Artificial Insemination" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#DoesNotNeedArtificialInsemination> .
+
+
+###  https://astrea.linkeddata.es/shapes#38ff24ad6d9612519cb61e8bb8ed7c84
+<https://astrea.linkeddata.es/shapes#38ff24ad6d9612519cb61e8bb8ed7c84> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "probability of high activity" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "probability of high activity" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#probabilityOfHighActivity> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#5a3984bb932380a6cba62af230888155
+<https://astrea.linkeddata.es/shapes#5a3984bb932380a6cba62af230888155> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has lactation" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/cow#Lactation> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has lactation" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#hasLactation> .
+
+
+###  https://astrea.linkeddata.es/shapes#609a26c94938050380cc26181d5166b3
+<https://astrea.linkeddata.es/shapes#609a26c94938050380cc26181d5166b3> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "relative activity" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "relative activity" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#relativeActivity> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#656cf50aa6e9fcc699518b951573a015
+<https://astrea.linkeddata.es/shapes#656cf50aa6e9fcc699518b951573a015> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Cow" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Cow" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#5a3984bb932380a6cba62af230888155> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#Cow> .
+
+
+###  https://astrea.linkeddata.es/shapes#7d698ecd35ab4e35c6f62c84baf2f938
+<https://astrea.linkeddata.es/shapes#7d698ecd35ab4e35c6f62c84baf2f938> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "birth date" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:dateTime ;
+                                                                       <http://www.w3.org/ns/shacl#name> "birth date" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#birthDate> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+
+###  https://astrea.linkeddata.es/shapes#790f2d51fc38e26d46e7fe6681ec0ecc
+<https://astrea.linkeddata.es/shapes#790f2d51fc38e26d46e7fe6681ec0ecc> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Inseminated" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Inseminated" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#Inseminated> .
+
+
+###  https://astrea.linkeddata.es/shapes#8bd89fe05f84e51782a812322aef1031
+<https://astrea.linkeddata.es/shapes#8bd89fe05f84e51782a812322aef1031> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "id animal" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "id animal" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#idAnimal> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#914c1b20ae42cc5fecc19590ce0616a3
+<https://astrea.linkeddata.es/shapes#914c1b20ae42cc5fecc19590ce0616a3> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has activity" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <https://auroral.iot.linkeddata.es/def/cow#Activity> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has activity" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <https://auroral.iot.linkeddata.es/def/cow#hasActivity> .
+
+
+###  https://astrea.linkeddata.es/shapes#9166039b51e4199c33cad0ec504280ea
+<https://astrea.linkeddata.es/shapes#9166039b51e4199c33cad0ec504280ea> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Pregnant" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Pregnant" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2c54c63bf1131388645855da58708ed5> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://auroral.iot.linkeddata.es/def/cow#Pregnant> .
+
+
+###  https://astrea.linkeddata.es/shapes#93784a69fd785f1b54d42c607dec320c
+<https://astrea.linkeddata.es/shapes#93784a69fd785f1b54d42c607dec320c> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Space Property" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Space Property" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://www.owl-ontologies.com/adapters#SpaceProperty> .
+
+
+###  https://astrea.linkeddata.es/shapes#94055da5a1b9ee17ec625821f49ff794
+<https://astrea.linkeddata.es/shapes#94055da5a1b9ee17ec625821f49ff794> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Feature Of Interest" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Feature Of Interest" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <https://saref.etsi.org/core#FeatureOfInterest> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

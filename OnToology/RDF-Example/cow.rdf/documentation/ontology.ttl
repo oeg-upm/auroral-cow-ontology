@@ -1,0 +1,160 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/cow#birthDate
+<https://auroral.iot.linkeddata.es/def/cow#birthDate> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination
+<https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#hasActivity
+<https://auroral.iot.linkeddata.es/def/cow#hasActivity> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#hasBreeding
+<https://auroral.iot.linkeddata.es/def/cow#hasBreeding> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#hasLactation
+<https://auroral.iot.linkeddata.es/def/cow#hasLactation> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#hasSensor
+<https://auroral.iot.linkeddata.es/def/cow#hasSensor> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#idAnimal
+<https://auroral.iot.linkeddata.es/def/cow#idAnimal> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#lactationDays
+<https://auroral.iot.linkeddata.es/def/cow#lactationDays> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#probabilityOfHighActivity
+<https://auroral.iot.linkeddata.es/def/cow#probabilityOfHighActivity> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#relativeActivity
+<https://auroral.iot.linkeddata.es/def/cow#relativeActivity> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#reproductiveStatus
+<https://auroral.iot.linkeddata.es/def/cow#reproductiveStatus> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/adapters#Accelerometer
+<https://auroral.iot.linkeddata.es/def/adapters#Accelerometer> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Sensor
+<https://auroral.iot.linkeddata.es/def/core#Sensor> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Activity
+<https://auroral.iot.linkeddata.es/def/cow#Activity> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Animal
+<https://auroral.iot.linkeddata.es/def/cow#Animal> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Breeding
+<https://auroral.iot.linkeddata.es/def/cow#Breeding> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Cow
+<https://auroral.iot.linkeddata.es/def/cow#Cow> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/cow#Animal> .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Lactation
+<https://auroral.iot.linkeddata.es/def/cow#Lactation> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Pregnant
+<https://auroral.iot.linkeddata.es/def/cow#Pregnant> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus> .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus
+<https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus> rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/core#FeatureOfInterest
+<https://saref.etsi.org/core#FeatureOfInterest> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/cow#Accelerometer41198
+<https://auroral.iot.linkeddata.es/def/cow#Accelerometer41198> rdf:type owl:NamedIndividual ,
+                                                                        <https://auroral.iot.linkeddata.es/def/adapters#Accelerometer> .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Activity491
+<https://auroral.iot.linkeddata.es/def/cow#Activity491> rdf:type owl:NamedIndividual ,
+                                                                 <https://auroral.iot.linkeddata.es/def/cow#Activity> ;
+                                                        <https://auroral.iot.linkeddata.es/def/cow#probabilityOfHighActivity> "48%" ;
+                                                        <https://auroral.iot.linkeddata.es/def/cow#relativeActivity> "96" .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Cow491
+<https://auroral.iot.linkeddata.es/def/cow#Cow491> rdf:type owl:NamedIndividual ,
+                                                            <https://auroral.iot.linkeddata.es/def/cow#Cow> ;
+                                                   <https://auroral.iot.linkeddata.es/def/cow#birthDate> "1601-01-01"^^xsd:date ;
+                                                   <https://auroral.iot.linkeddata.es/def/cow#hasActivity> <https://auroral.iot.linkeddata.es/def/cow#Activity491> ;
+                                                   <https://auroral.iot.linkeddata.es/def/cow#hasBreeding> <https://auroral.iot.linkeddata.es/def/cow#RedSpottedCow> ;
+                                                   <https://auroral.iot.linkeddata.es/def/cow#hasLactation> <https://auroral.iot.linkeddata.es/def/cow#Lactation491> ;
+                                                   <https://auroral.iot.linkeddata.es/def/cow#hasSensor> <https://auroral.iot.linkeddata.es/def/cow#Accelerometer41198> ;
+                                                   <https://auroral.iot.linkeddata.es/def/cow#idAnimal> "491" ;
+                                                   <https://auroral.iot.linkeddata.es/def/cow#reproductiveStatus> <https://auroral.iot.linkeddata.es/def/cow#Pregnant491> .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Lactation491
+<https://auroral.iot.linkeddata.es/def/cow#Lactation491> rdf:type owl:NamedIndividual ,
+                                                                  <https://auroral.iot.linkeddata.es/def/cow#Lactation> ;
+                                                         <https://auroral.iot.linkeddata.es/def/cow#lactationDays> 307 .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#Pregnant491
+<https://auroral.iot.linkeddata.es/def/cow#Pregnant491> rdf:type owl:NamedIndividual ,
+                                                                 <https://auroral.iot.linkeddata.es/def/cow#Pregnant> ;
+                                                        <https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination> 178 .
+
+
+###  https://auroral.iot.linkeddata.es/def/cow#RedSpottedCow
+<https://auroral.iot.linkeddata.es/def/cow#RedSpottedCow> rdf:type owl:NamedIndividual ,
+                                                                   <https://auroral.iot.linkeddata.es/def/cow#Breeding> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
