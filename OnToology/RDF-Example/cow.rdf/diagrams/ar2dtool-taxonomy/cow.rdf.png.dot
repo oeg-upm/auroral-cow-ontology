@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+	"ns1:Pregnant" -> "ns1:ReproductiveStatus" [ label = "rdfs:subClassOf" ];
+	":Accelerometer" -> "https://auroral.iot.linkeddata.es/def/core#Sensor" [ label = "rdfs:subClassOf" ];
+	"ns1:Animal" -> "https://saref.etsi.org/core#FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"ns1:Cow" -> "ns1:Animal" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,154 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Accelerometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Accelerometer41198",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Accelerometer"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Activity491",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Activity"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#probabilityOfHighActivity" : [ {
+    "@value" : "48%"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#relativeActivity" : [ {
+    "@value" : "96"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Animal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core#FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Breeding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Cow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Animal"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Cow491",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Cow"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#birthDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "1601-01-01"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#hasActivity" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Activity491"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#hasBreeding" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#RedSpottedCow"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#hasLactation" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Lactation491"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#hasSensor" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Accelerometer41198"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#idAnimal" : [ {
+    "@value" : "491"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#reproductiveStatus" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Pregnant491"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Lactation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Lactation491",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Lactation"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#lactationDays" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "307"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Pregnant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#Pregnant491",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Pregnant"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "178"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#RedSpottedCow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/cow#Breeding"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#ReproductiveStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#birthDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#daysSinceLastInsemination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasBreeding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasLactation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#hasSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#idAnimal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#lactationDays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#probabilityOfHighActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#relativeActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/cow#reproductiveStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core#FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
