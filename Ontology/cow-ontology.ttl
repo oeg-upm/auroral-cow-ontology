@@ -165,6 +165,7 @@ cow:Activity rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/cow#Animal
 cow:Animal rdf:type owl:Class ;
+           rdfs:subClassOf saref:FeatureOfInterest ;
            rdfs:label "Animal" .
 
 
