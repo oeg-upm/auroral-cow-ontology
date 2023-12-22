@@ -103,6 +103,9 @@
     "DoesNotNeedArtificialInsemination" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/cow#DoesNotNeedArtificialInsemination"
     },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
     "Accelerometer" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/adapters#Accelerometer"
     },

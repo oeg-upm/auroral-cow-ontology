@@ -1,10 +1,11 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "adapters:Accelerometer" ":SpaceProperty" "cow:ReproductiveStatus" "cow:DoesNotNeedArtificialInsemination" "saref:Property" "cow:Heifer" "cow:Cow" "cow:Pregnant" "cow:Animal" "cow:ToUndergoArtificialInsemination" "cow:RecentDelivery" "cow:Inseminated" "https://auroral.iot.linkeddata.es/def/core#Sensor" ; /*classes style*/
+node [shape = rectangle, color="black"]; "adapters:Accelerometer" ":SpaceProperty" "cow:ReproductiveStatus" "cow:DoesNotNeedArtificialInsemination" "saref:Property" "saref:FeatureOfInterest" "cow:Heifer" "cow:Cow" "cow:Pregnant" "cow:Animal" "cow:ToUndergoArtificialInsemination" "cow:RecentDelivery" "cow:Inseminated" "https://auroral.iot.linkeddata.es/def/core#Sensor" ; /*classes style*/
 	"cow:Inseminated" -> "cow:ReproductiveStatus" [ label = "rdfs:subClassOf" ];
 	"adapters:Accelerometer" -> "https://auroral.iot.linkeddata.es/def/core#Sensor" [ label = "rdfs:subClassOf" ];
 	"cow:ToUndergoArtificialInsemination" -> "cow:ReproductiveStatus" [ label = "rdfs:subClassOf" ];
+	"cow:Animal" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 	"cow:DoesNotNeedArtificialInsemination" -> "cow:ReproductiveStatus" [ label = "rdfs:subClassOf" ];
 	":SpaceProperty" -> "saref:Property" [ label = "rdfs:subClassOf" ];
 	"cow:Cow" -> "cow:Animal" [ label = "rdfs:subClassOf" ];

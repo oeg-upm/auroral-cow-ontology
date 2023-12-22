@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://auroral.iot.linkeddata.es/def/tests/cow#"
+     xml:base="https://auroral.iot.linkeddata.es/def/tests/cow"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vtc="https://w3id.org/def/vtc#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://auroral.iot.linkeddata.es/def/tests/cow#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#belongsTo -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vtc#belongsTo"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#desiredBehaviour -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/vtc#desiredBehaviour"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestCaseDesign -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vtc#TestCaseDesign"/>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestSuite -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/vtc#TestSuite"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test1">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Animal subClassOf FeatureOfInterest</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test10 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test10">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Accelerometer subClassOf Sensor</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test11 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test11">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Animal hasActivity Activity</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test12 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test12">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Animal hasBreeding Breeding</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test13 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test13">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Cow hasLactation Lactation</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test14 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test14">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Property isPropertyOf FeatureOfInterest</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test15 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test15">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Sensor measures Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test16 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test16">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Animal reproductiveStatus ReproductiveStatus</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test17 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test17">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>RedSpottedCow type Breeding</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test18 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test18">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>XAxisAcceleration type SpaceProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test19 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test19">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>YAxisAcceleration type SpaceProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test2">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Cow subClassOf Animal</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test20 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test20">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>ZAxisAcceleration type SpaceProperty</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test3 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test3">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Heifer subClassOf Animal</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test4 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test4">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>SpaceProperty subClassOf Property</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test5 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test5">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>DoesNotNeedArtificialInsemination subClassOf ReproductiveStatus</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test6 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test6">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Inseminated subClassOf ReproductiveStatus</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test7 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test7">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>Pregnant subClassOf ReproductiveStatus</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test8 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test8">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>RecentDelivery subClassOf ReproductiveStatus</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test9 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#Test9">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://w3id.org/def/vtc#TestSuiteCow"/>
+        <vtc:desiredBehaviour>ToUndergoArtificialInsemination subClassOf ReproductiveStatus</vtc:desiredBehaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#TestSuiteCow -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/vtc#TestSuiteCow">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestSuite"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
