@@ -1,0 +1,259 @@
+[ {
+  "@id" : "https://auroral.iot.linkeddata.es/def/tests/cow#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Animal subClassOf FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Accelerometer subClassOf Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Animal hasActivity Activity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Animal hasBreeding Breeding"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Cow hasLactation Lactation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Property isPropertyOf FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Sensor measures Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Animal reproductiveStatus ReproductiveStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "RedSpottedCow type Breeding"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "XAxisAcceleration type SpaceProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "YAxisAcceleration type SpaceProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Cow subClassOf Animal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ZAxisAcceleration type SpaceProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Heifer subClassOf Animal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "SpaceProperty subClassOf Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DoesNotNeedArtificialInsemination subClassOf ReproductiveStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Inseminated subClassOf ReproductiveStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Pregnant subClassOf ReproductiveStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "RecentDelivery subClassOf ReproductiveStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuiteCow"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ToUndergoArtificialInsemination subClassOf ReproductiveStatus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestCaseDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestSuite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestSuiteCow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestSuite"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#desiredBehaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
